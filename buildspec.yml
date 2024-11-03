@@ -1,0 +1,25 @@
+version: 0.2 
+
+env:
+  variables: 
+    GOOS: linux
+    GOARCH: amd64
+
+phases: 
+  install: 
+    runtime-versions:
+      golang: 1.20
+    commands: 
+      - go version
+
+  build: 
+    commands: 
+      - echo "Building for " ${GOOS}
+      - go get api
+      - go build .
+      - ls -la 
+
+artifacts: 
+  files:
+    - api
+  name: api.zip 

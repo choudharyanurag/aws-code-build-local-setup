@@ -1,0 +1,4 @@
+IMAGE_REPO_NAME=<repo name>
+IMAGE_TAG=<image tag>
+AWS_ACCOUNT_ID=<your account id>
+AWS_DEFAULT_REGION=<your account region>
